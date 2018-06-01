@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Теннисный клуб "Ананас"</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+<!--<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>-->
+<!--Мобильное меню-->
+<nav id="menu">
+    <div class="mob__menu-logo-wrap">
+        <img src="img/logo_club.svg" alt="" class="mob__menu-logo">
+    </div>
+    <a href="school.html" class="mob__menu_item">ШКОЛА ТЕННИСА</a>
+    <a href="#photos_anchor" class="mob__menu_item">ГАЛЕРЕЯ</a>
+    <a href="#price_anchor" class="mob__menu_item">ЦЕНЫ</a>
+    <a href="#contacts_anchor" class="mob__menu_item">КОНТАКТЫ</a>
+    <div class="social-icons-mob">
+        <a href="https://www.facebook.com/tennisclubananas/" target="_blank" class="social-icons_link">
+            <svg class="social-icons_fb" width="31px" height="31px" viewBox="0 0 260 260">
+                <path class="fb-blue"
+                      d="M248.082,262.307c7.854,0,14.223-6.369,14.223-14.225V18.812 c0-7.857-6.368-14.224-14.223-14.224H18.812c-7.857,0-14.224,6.367-14.224,14.224v229.27c0,7.855,6.366,14.225,14.224,14.225  H248.082z"/>
+                <path class="fb-white" fill="#181818"
+                      d="M182.409,262.307v-99.803h33.499l5.016-38.895h-38.515V98.777c0-11.261,3.127-18.935,19.275-18.935  l20.596-0.009V45.045c-3.562-0.474-15.788-1.533-30.012-1.533c-29.695,0-50.025,18.126-50.025,51.413v28.684h-33.585v38.895h33.585  v99.803H182.409z"/>
+            </svg>
+        </a>
+      <!--  <div class="header__up_lang-mob">
+            <span class="ua">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="24" viewBox="0 0 640 480">
+                                <g fill-rule="evenodd" stroke-width="1pt">
+                                    <path fill="#ffd500" d="M0 0h640v480H0z"/>
+                                    <path fill="#005bbb" d="M0 0h640v240H0z"/>
+                                </g>
+                            </svg>
+                        </span>
+            <span class="ru">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="24" viewBox="0 0 640 480">
+                                <g fill-rule="evenodd" stroke-width="1pt">
+                                    <path fill="#fff" d="M0 0h640v480H0z"/>
+                                    <path fill="#0039a6" d="M0 160.003h640V480H0z"/>
+                                    <path fill="#d52b1e" d="M0 319.997h640V480H0z"/>
+                                </g>
+                            </svg>
+                        </span>
+            <span class="en">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="24" viewBox="0 0 640 480">
+                                <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+                                    <g stroke-width="1pt">
+                                        <path fill="#006" d="M-256 0H768.02v512.01H-256z"/>
+                                        <path d="M-256 0v57.244l909.535 454.768H768.02V454.77L-141.515 0H-256zM768.02 0v57.243L-141.515 512.01H-256v-57.243L653.535 0H768.02z"
+                                              fill="#fff"/>
+                                        <path d="M170.675 0v512.01h170.67V0h-170.67zM-256 170.67v170.67H768.02V170.67H-256z"
+                                              fill="#fff"/>
+                                        <path d="M-256 204.804v102.402H768.02V204.804H-256zM204.81 0v512.01h102.4V0h-102.4zM-256 512.01L85.34 341.34h76.324l-341.34 170.67H-256zM-256 0L85.34 170.67H9.016L-256 38.164V0zm606.356 170.67L691.696 0h76.324L426.68 170.67h-76.324zM768.02 512.01L426.68 341.34h76.324L768.02 473.848v38.162z"
+                                              fill="#c00"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+        </div>-->
+    </div>
+</nav>
+<main id="panel">
+    <section class="first-screen">
+        <header>
+            <div class="container">
+                <div class="header__up">
+                    <div class="menu__icon-mob">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="contacts-mob">
+                        <span>+38(044) 209-88-28</span>
+                        <span>+38(067) 209-88-28</span>
+                    </div>
+                    <p class="header__up_text">Свяжитесь с нами: <span
+                            class="header__up_text-colored">+38(044) 209-88-28</span> | <span
+                            class="header__up_text-colored">+38(067) 209-88-28</span> | Работаем <span
+                            class="header__up_text-colored">с 7:00 до 23:00</span> без выходных</p>
+
+                   <!-- <div class="header__up_lang">
+                        <span class="ua">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="24" viewBox="0 0 640 480">
+                                <g fill-rule="evenodd" stroke-width="1pt">
+                                    <path fill="#ffd500" d="M0 0h640v480H0z"/>
+                                    <path fill="#005bbb" d="M0 0h640v240H0z"/>
+                                </g>
+                            </svg>
+                        </span>
+
+                        <span class="ru">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="24" viewBox="0 0 640 480">
+                                <g fill-rule="evenodd" stroke-width="1pt">
+                                    <path fill="#fff" d="M0 0h640v480H0z"/>
+                                    <path fill="#0039a6" d="M0 160.003h640V480H0z"/>
+                                    <path fill="#d52b1e" d="M0 319.997h640V480H0z"/>
+                                </g>
+                            </svg>
+                        </span>
+
+                        <span class="en">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="24" viewBox="0 0 640 480">
+                                <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+                                    <g stroke-width="1pt">
+                                        <path fill="#006" d="M-256 0H768.02v512.01H-256z"/>
+                                        <path d="M-256 0v57.244l909.535 454.768H768.02V454.77L-141.515 0H-256zM768.02 0v57.243L-141.515 512.01H-256v-57.243L653.535 0H768.02z"
+                                              fill="#fff"/>
+                                        <path d="M170.675 0v512.01h170.67V0h-170.67zM-256 170.67v170.67H768.02V170.67H-256z"
+                                              fill="#fff"/>
+                                        <path d="M-256 204.804v102.402H768.02V204.804H-256zM204.81 0v512.01h102.4V0h-102.4zM-256 512.01L85.34 341.34h76.324l-341.34 170.67H-256zM-256 0L85.34 170.67H9.016L-256 38.164V0zm606.356 170.67L691.696 0h76.324L426.68 170.67h-76.324zM768.02 512.01L426.68 341.34h76.324L768.02 473.848v38.162z"
+                                              fill="#c00"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                    </div>-->
+                </div>
+
+                <div class="header__down">
+                    <div class="header__logo">
+                        <img src="img/logo_club.svg" alt="">
+                    </div>
+                    <nav class="header__menu">
+                        <a href="school.html" class="header__menu_item">ШКОЛА ТЕННИСА</a>
+                        <a href="#photos_anchor" class="header__menu_item">ГАЛЕРЕЯ</a>
+                        <a href="#price_anchor" class="header__menu_item">ЦЕНЫ</a>
+                        <a href="#contacts_anchor" class="header__menu_item">КОНТАКТЫ</a>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/tennisclubananas/" target="_blank"
+                               class="social-icons_link">
+                                <svg class="social-icons_fb" width="31px" height="31px" viewBox="0 0 260 260">
+                                    <path class="fb-blue"
+                                          d="M248.082,262.307c7.854,0,14.223-6.369,14.223-14.225V18.812 c0-7.857-6.368-14.224-14.223-14.224H18.812c-7.857,0-14.224,6.367-14.224,14.224v229.27c0,7.855,6.366,14.225,14.224,14.225  H248.082z"/>
+                                    <path class="fb-white" fill="#181818"
+                                          d="M182.409,262.307v-99.803h33.499l5.016-38.895h-38.515V98.777c0-11.261,3.127-18.935,19.275-18.935  l20.596-0.009V45.045c-3.562-0.474-15.788-1.533-30.012-1.533c-29.695,0-50.025,18.126-50.025,51.413v28.684h-33.585v38.895h33.585  v99.803H182.409z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="home-slider first-screen">
+            <div class="home-slider__item home-slider__item--first home-slider__item--showing">
+                <div class="home-slider__content">
+                    <h1 class="home-slider__top slogan home-slider__top--showing">ТЕННИСНЫЙ КЛУБ "АНАНАС"</h1>
+                    <p class="home-slider__title subslogan home-slider__title--showing">Самый добрый теннисный клуб
+                        страны</p>
+                    <span class="home-slider__line home-slider__line--showing"></span>
+                </div>
+            </div>
+
+            <div class="home-slider__item home-slider__item--second">
+                <div class="home-slider__content">
+                    <h2 class="home-slider__top slogan">КОРТЫ ВЫСШЕЙ КАТЕГОРИИ</h2>
+                    <p class="home-slider__title subslogan">Приходи и получай удовольствие от игры</p>
+                    <span class="home-slider__line"></span>
+                </div>
+            </div>
+
+            <div class="home-slider__item home-slider__item--third">
+                <div class="home-slider__content">
+                    <h2 class="home-slider__top slogan">ШКОЛА ТЕННИСА ДЛЯ ДЕТЕЙ</h2>
+                    <p class="home-slider__title subslogan">10 штатных трененов высокого уровня</p>
+                    <span class="home-slider__line"></span>
+                </div>
+            </div>
+
+            <div class="home-slider__control">
+                <button class="home-slider__control-item home-slider__control-item--showing"
+                        data-currentslide="0"></button>
+                <button class="home-slider__control-item" data-currentslide="1"></button>
+                <button class="home-slider__control-item" data-currentslide="2"></button>
+            </div>
+        </section>
+
+        <div class="fs_btn__wrap">
+            <a href="#modal" class="fs_btn">ЗАБРОНИРОВАТЬ КОРТ</a>
+        </div>
+    </section>
+
+    <section class="propositions">
+        <div class="container">
+            <div class="h3__head-wrap">
+                <h3 class="h3__head prop__head wow">ЧТО МЫ <span>ПРЕДЛАГАЕМ?</span>
+                    <i class="line wow"></i>
+                </h3>
+            </div>
+
+            <div class="row props__row">
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/9.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">ГРУНТОВОЕ<br>ПОКРЫТИЕ</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/8.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">5 КОРТОВ</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/3.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">WI-FI</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/2.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">УБОРКА КОРТОВ <br>ПЕРСОНАЛОМ</span>
+                </div>
+            </div>
+
+            <div class="row props__row">
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/5.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">ПОДАРОЧНЫЕ<br> СЕРТИФИКАТЫ</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/6.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">СПОРТИНВЕНТАРЬ <br>СПОРТПИТАНИЕ</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/7.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">ПЛАТЕЖНЫЙ<br> ТЕРМИНАЛ</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/1.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">ОХРАНЯЕМАЯ <br>ПАРКОВКА</span>
+                </div>
+            </div>
+
+            <div class="row props__row">
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/4.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">ЧАЙ/КОФЕ/ВОДА<br>ВКЛЮЧЕНЫ</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/10.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">РАБОТАЕМ ЗИМОЙ<br>И ЛЕТОМ</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/11.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">САУНА</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/12.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">ПРОВЕДЕНИЕ<br>ТУРНИРОВ</span>
+                </div>
+            </div>
+
+            <div class="row props__row">
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/13.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">ПОЛОТЕНЦА</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/14.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">ГОРЯЧАЯ ВОДА<br>ЧИСТЫЙ ТУАЛЕТ</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/15.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">ДРУЖЕСТВЕННАЯ<br>ОБСТАНОВКА</span>
+                </div>
+                <div class="props__icon col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/png/16.png" alt="" class="fadeIn wow">
+                    <span class="fadeInUp wow">СТРИНГЕР ДЛЯ<br>НАТЯЖКИ СТРУН</span>
+                </div>
+            </div>
+            <div class="props__btn_wrap">
+                <a href="#modal" class="props__btn wow fadeIn">ЗАБРОНИРОВАТЬ <br>КОРТ</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="virtual-map wow fadeInUp">
+        <div class="container">
+            <h3 class="vm__head wow">ВИРТУАЛЬНАЯ <br><span>3D КАРТА</span>
+                <i class="line wow"></i>
+            </h3>
+            <div class="vm__btn_wrap">
+                <a href="virtual/index.html" class="vm__btn">СМОТРЕТЬ</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="admins">
+        <div class="container">
+            <div class="h3__head-wrap">
+                <h3 class="h3__head admins__head wow">НАШИ <span>АДМИНИСТРАТОРЫ</span><br>
+                    ОТВЕТЯТ НА <span>ВСЕ ВАШИ ВОПРОСЫ</span>
+                    <i class="line wow"></i>
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12 admins__item wow fadeInUp">
+                    <img src="img/temp/admin-1.png" alt="">
+                    <span>Мария</span>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 admins__item wow fadeInUp">
+                    <img src="img/admin-2.jpg" alt="">
+                    <span>Татьяна</span>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 admins__item wow fadeInUp">
+                    <img src="img/admin-3.jpg" alt="">
+                    <span>Кристина</span>
+                </div>
+            </div>
+            <div class="admins__tel wow fadeInUp">
+                <span>+38(044) 209-88-28</span>
+                <span>+38(067) 209-88-28</span>
+                <span class="call">ЗВОНИТЕ</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="photos">
+        <div id="photos_anchor"></div>
+        <div class="container">
+            <div class="h3__head-wrap">
+                <h3 class="photos__header h3__head wow">НАША <span>ФОТОГАЛЕРЕЯ</span>
+                    <i class="line wow"></i>
+                </h3>
+            </div>
+            <div class="owl-carousel owl-theme main-slider wow bounceInRight">
+                <div class="item"><img src="img/temp/main_slider/1.jpg" alt=""></div>
+                <div class="item"><img src="img/temp/school_slider/3.jpg" alt=""></div>
+                <div class="item"><img src="img/temp/school_slider/5.jpg" alt=""></div>
+                <div class="item"><img src="img/temp/main_slider/2.jpg" alt=""></div>
+                <div class="item"><img src="img/temp/main_slider/3.jpg" alt=""></div>
+                <div class="item"><img src="img/temp/school_slider/12.jpg" alt=""></div>
+                <div class="item"><img src="img/temp/main_slider/4.jpg" alt=""></div>
+                <div class="item"><img src="img/temp/main_slider/5.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rank wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="rank__left-item col-md-6 col-sm-6 col-xs-12">
+                    <h4>корты категории <span>а</span></h4>
+                    <p>Корты категории А имеют право проводить всеукраинские турниры по большому теннису, имеют
+                        соответствующие для этого условия и доверие федерации тенниса Украины.</p>
+                </div>
+
+                <div class="rank__right-item col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/sertificate.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="game">
+        <div class="container">
+            <div class="h3__head-wrap">
+                <h3 class="photos__header h3__head wow">УСЛОВИЯ <span>ИГРЫ</span>
+                    <i class="line wow"></i>
+                </h3>
+            </div>
+
+            <div class="game__icons">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12 icon wow fadeInUp">
+                        <img src="img/temp/g1.png" alt="">
+                        <span>Игровое время:<br>55 минут </span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 icon wow fadeInUp">
+                        <img src="img/temp/g2.png" alt="">
+                        <span>Отмена брони<br>не позже, чем<br>за 24 часа</span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 icon wow fadeInUp">
+                        <img src="img/temp/g3.png" alt="">
+                        <span>Теннисная обувь</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <div id="price_anchor"></div>
+        <div class="container">
+            <div class="h3__head-wrap" style="margin-top: 120px;">
+                <h3 class="photos__header h3__head wow">НАШИ <span>ЦЕНЫ</span>
+                    <i class="line wow"></i>
+                </h3>
+            </div>
+
+            <!--  <div class="row price__header-row">
+                  <div class="col-md-2 left-item">Время</div>
+                  <div class="col-md-2 right-item"> Стоимость часа игры</div>
+              </div>
+
+              <div class="row price__body">
+                  <div class="col-md-6 left-item">7 : 00 - 23 : 00</div>
+                  <div class="col-md-6 right-item">150 грн.</div>
+              </div>
+              <div class="row price__body">
+                  <div class="col-md-6 left-item">7 : 00 - 23 : 00 ( 5 корт )</div>
+                  <div class="col-md-6 right-item">170 грн.</div>
+              </div>-->
+
+
+            <div class="row price__header-row">
+                <div class="col-md-4 col-sm-4 col-xs-4 item">Время</div>
+                <div class="col-md-4 col-sm-4 col-xs-4 item">Будни</div>
+                <div class="col-md-4 col-sm-4 col-xs-4 item">Выходные</div>
+            </div>
+
+            <div class="row price__subheader-row">
+                <div class="col-md-4 col-sm-4 col-xs-4 item"></div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">Депозит*</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">Разовое</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">*Депозит</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">Разовое</div>
+            </div>
+            <!--Строка для мобил-->
+            <div class="row price__subheader-row-mob">
+                <div class="col-xs-4 item"></div>
+                <div class="col-xs-2 item">Д*</div>
+                <div class="col-xs-2 item">Р</div>
+                <div class="col-xs-2 item">Д*</div>
+                <div class="col-xs-2 item">Р</div>
+            </div>
+
+            <div class="row price__body">
+                <div class="col-md-4 col-sm-4 col-xs-4 item">7:00 - 8:00</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">-</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">-</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">250 грн</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">250 грн</div>
+            </div>
+
+            <div class="row price__body">
+                <div class="col-md-4 col-sm-4 col-xs-4 item">7:00 - 15:00</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">370 грн</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">400 грн</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">-</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">-</div>
+            </div>
+
+            <div class="row price__body">
+                <div class="col-md-4 col-sm-4 col-xs-4 item">8:00 - 21:00</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">-</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">-</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">370 грн</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">400 грн</div>
+            </div>
+
+            <div class="row price__body">
+                <div class="col-md-4 col-sm-4 col-xs-4 item">15:00 - 21:00</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">450 грн</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">480 грн</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">-</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">-</div>
+            </div>
+
+            <div class="row price__body">
+                <div class="col-md-4 col-sm-4 col-xs-4 item">21:00 - 23:00</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">250 грн</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">250 грн</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">250 грн</div>
+                <div class="col-md-2 col-sm-2 col-xs-2 item">250 грн</div>
+            </div>
+            <p class="price__notice-mob"> Д - Депозит<br> Р - Разовое посещение</p>
+            <p class="price__notice">
+                Спецпредложения для оптовиков обсуждаются отдельно<br>
+                *Депозит минимум на 6 занятий
+            </p>
+
+            <div class="price__btn_wrap">
+                <a href="#modal" class="price__btn wow fadeIn">ЗАБРОНИРОВАТЬ <br>КОРТ</a>
+            </div>
+        </div>
+    </section>
+    <section class="weather">
+        <div class="container">
+            <!-- Gismeteo informer START -->
+                <link rel="stylesheet" type="text/css" href="https://s1.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+                 <div id="gsInformerID-b8odSBkd62V2bc" class="gsInformer" style="width:940px;height:132px">
+                     <div class="gsIContent">
+                         <div id="cityLink">
+                             <a href="https://www.gismeteo.ua/ua/weather-kyiv-4944/" title="Погода у Києві" target="_blank">
+                                 <img src="https://s1.gismeteo.ua/static/images/gisloader.svg" width="24" height="24" alt="Погода у Києві">
+                             </a>
+                         </div>
+                         <div class="gsLinks">
+                             <table>
+                                 <tr>
+                                     <td>
+                                         <div class="leftCol">
+                                             <a href="https://www.gismeteo.ua/ua/" target="_blank" title="Погода">
+                                                 <img alt="Погода" src="https://s1.gismeteo.ua/static/images/informer2/logo-mini2.png" align="middle" border="0" height="16" width="11"/>
+                                                 <img src="https://s1.gismeteo.ua/static/images/gismeteo.svg" border="0" align="middle" style="left: 5px; top:1px">
+                                             </a>
+                                         </div>
+                                         <div class="rightCol">
+                                             <a href="https://www.gismeteo.ua/ua/weather-kyiv-4944/14-days/" target="_blank" title="Погода у Києві на 2 тижні">
+                                                 <img src="https://s1.gismeteo.ua/static/images/informer2/forecast-2weeks.ua.svg" border="0" align="middle" style="top:auto" alt="Погода у Києві на 2 тижні">
+                                             </a>
+                                         </div>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </div>
+                     </div>
+                 </div>
+
+            <script src="https://www.gismeteo.ua/ajax/getInformer/?hash=b8odSBkd62V2bc" type="text/javascript"></script>
+            <!-- Gismeteo informer END -->
+        </div>
+    </section>
+
+    <section class="map wow fadeIn">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.798811593801!2d30.47040231571627!3d50.42621997947197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cec76d4a9d7d%3A0x4ea1746cbdd15f24!2z0LLRg9C70LjRhtGPINCc0LDQutGB0LjQvNCwINCa0YDQuNCy0L7QvdC-0YHQsCwgMtCTLCDQmtC40ZfQsiwg0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sru!4v1506508655446"
+                width="100%" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <footer class="" id="contacts_anchor">
+        <div class="container">
+            <div class="row">
+                <h4 class="footer__head col-xs-12">КОНТАКТЫ</h4>
+            </div>
+
+            <div class="row footer__up">
+                <div class="footer__left-item col-md-7 col-sm-7 col-xs-12">
+                    <p class="footer__text">
+                        Киев, ул. Максима Кривоноса, 2<br>
+                        Телефон: (044) 209-88-28<br>
+                        Мобильный: (067) 209-88-28<br>
+                        Факс: (044) 209-88-28<br>
+                        E-mail: ananas@tennis-club.kiev.ua
+                    </p>
+                </div>
+
+                <div class="footer__right-item col-sm-5 col-xs-12">
+                    <p class="footer__text">
+                        Юридическую поддержку<br>
+                        осуществляет компания :
+                    </p>
+                    <a href="http://strateg-llc.com" target="_blank" class="footer__partner">
+                        <img src="img/partner.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer__down col-md-12 col-sm-12 col-xs-12">
+                    <p>2015-2017 | Все права защищены | Киев - Теннисный клуб - "Ананас"</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+
+<div class="remodal" data-remodal-id="modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+  <!--  <form action="send.php" method="post" class="feedback" id="form">
+        <input type="text" name="name" placeholder="Ваше имя">
+        <input type="tel" name="phone" placeholder="Номер телефона">
+        <textarea name="comment" id="" cols="30" rows="10" value="Ваше сообщение"></textarea>
+       &lt;!&ndash; <input type="text" placeholder="Желаемая дата">
+        <label for="moda_from">С:</label>
+        <select name="" id="moda_from">
+            <option value="">7:00</option>
+            <option value="">8:00</option>
+            <option value="">9:00</option>
+            <option value="">10:00</option>
+            <option value="">11:00</option>
+            <option value="">12:00</option>
+            <option value="">13:00</option>
+            <option value="">14:00</option>
+            <option value="">15:00</option>
+            <option value="">16:00</option>
+            <option value="">17:00</option>
+            <option value="">18:00</option>
+            <option value="">19:00</option>
+            <option value="">20:00</option>
+            <option value="">21:00</option>
+        </select>
+
+        <label for="moda_to">До:</label>
+        <select name="" id="moda_to">
+            <option value="">7:00</option>
+            <option value="">8:00</option>
+            <option value="">9:00</option>
+            <option value="">10:00</option>
+            <option value="">11:00</option>
+            <option value="">12:00</option>
+            <option value="">13:00</option>
+            <option value="">14:00</option>
+            <option value="">15:00</option>
+            <option value="">16:00</option>
+            <option value="">17:00</option>
+            <option value="">18:00</option>
+            <option value="">19:00</option>
+            <option value="">20:00</option>
+            <option value="">21:00</option>
+        </select>&ndash;&gt;
+    <input type="submit" class="remodal-confirm" value="Отправить">
+    </form>-->
+    <h2 class="temp_msg">Форма заявок в данный момент недоступна. Свяжитесь с нами по телефонам:
+        <span>+38(044) 209-88-28</span>
+        <span>+38(067) 209-88-28</span>
+    </h2>
+    <!--<button data-remodal-action="confirm" class="remodal-confirm">Отправить</button>-->
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/remodal.min.js"></script>
+<script src="js/slideout.min.js"></script>
+<script>
+    // Инициализируем анимацию
+    new WOW().init();
+
+    // Плавный скролл якорей
+    $(document).ready(function () {
+        $(".header__menu_item, .mob__menu_item").on("click", function () {
+            //event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1000);
+        });
+    });
+
+    // Инициализируем слайдер
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        center: true,
+        navText: [' ', ' '],
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    });
+
+    //Модалка
+    //var options = {...};
+    $('[data-remodal-id=modal]').remodal();
+
+    //Мобильное меню
+    var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    // Toggle button
+    document.querySelector('.menu__icon-mob').addEventListener('click', function () {
+        slideout.toggle();
+    });
+
+    // Закрытие мобильного меню при клике
+    var mobMenuItem = document.querySelectorAll('.mob__menu_item');
+    for (var i = 0; i < mobMenuItem.length; i++) {
+        mobMenuItem[i].addEventListener('click', function () {
+            slideout.close();
+        });
+    };
+
+    // Прелоадер
+  /*  $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    });*/
+</script>
+</body>
+</html>

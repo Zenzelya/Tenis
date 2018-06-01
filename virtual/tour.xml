@@ -1,0 +1,254 @@
+<krpano version="1.17.4" title="Ананас" onstart="startup();">
+
+	<include url="skin/vtourskin.xml" />
+        <plugin name="options" url="%SWFPATH%/plugins/options.swf" keep="true"/>
+	<!-- set skin settings: bingmaps? gyro? thumbnail controlling? tooltips? -->
+	<skin_settings bingmaps="false"
+	               bingmaps_key=""
+	               bingmaps_zoombuttons="false"
+	               gyro="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="false"
+	               controlbar_offset="20"
+	               />
+
+	<!-- set optional skin logo url -->
+	<layer name="skin_logo" url="" scale="0.25" opened_onclick="openurl('...',_blank);" />
+
+
+	<action name="startup">
+		if(startscene === null, copy(startscene,scene[0].name));
+		loadscene(get(startscene), null, MERGE);
+	</action>
+
+	<scene name="pano73" title="Фасад"
+       heading="0"
+       thumburl="%FIRSTXML%/panos/fasad_73/thumbnail.jpg"
+       backgroundsound=""
+       backgroundsoundloops="0"
+       titleid="pano73_title"
+       descriptionid=""
+       multires="true"
+       planar="true"
+       full360="false">
+
+    <autorotate horizon="0.000000" tofov="0.682747" waittime="1" speed="5"/>
+
+    <panoview h="0.000000" v="0.000000" fov="0.682747" hmin="-0.5" hmax="0.5" vmin="-0.341373534338358" vmax="0.341373534338358" fovmax="90" />
+    <view fisheye="0"
+          limitview="range"
+          hlookatmin="-0.5"
+          hlookatmax="0.5"
+          vlookatmin="-0.341373534338358"
+          vlookatmax="0.341373534338358"
+          maxpixelzoom="1.0"
+          fovmax="90"
+          fov="0.682747"
+          hlookat="0.000000"
+          vlookat="0.000000"/>
+
+    <preview url="%FIRSTXML%/panos/fasad_73/preview.jpg"/>
+
+      <image type="CYLINDER" hfov="1" vfov="0.682747068676717" voffset="0" multires="true" baseindex="0" tilesize="512">
+        <level tiledimagewidth="2985" tiledimageheight="2038">
+          <cylinder url="panos/fasad_73/1/%v_%u.jpg"/>
+        </level>
+        <level tiledimagewidth="1492" tiledimageheight="1019">
+          <cylinder url="panos/fasad_73/0/%v_%u.jpg"/>
+        </level>
+      </image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.231" atv="0.081" linkedscene="scene_reception_final"  laX="0" laY="0" laF="100" tooltip_txt="вход"/>
+
+	</scene>
+	
+	<scene name="scene_Reception_final" title="Рецепция" onstart="" thumburl="panos/Reception_final.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="1.5" fovmin="70" fovmax="100" limitview="auto" />
+
+		<preview url="panos/Reception_final.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Reception_final.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/Reception_final.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-166.758" atv="5.542" linkedscene="scene_myzhskajarazdevalka_final" laX="0" laY="0" laF="100" tooltip_txt="мужская раздевалка"/>
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="23.266" atv="4.895" linkedscene="scene_genskajarazdevalka_final" laX="0" laY="0" laF="100" tooltip_txt="женская раздевалка"/>
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-46.168" atv="2.314" linkedscene="scene_kort2_final1" laX="0" laY="0" laF="100" tooltip_txt="корт"/>
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="137.934" atv="4.043" linkedscene="pano73" laX="0" laY="0" laF="100" tooltip_txt="фасад"/>
+		
+
+	</scene>
+	
+	<scene name="scene_MyzhskajaRazdevalka_final" title="Мужская раздевалка" onstart="" thumburl="panos/MyzhskajaRazdevalka_final.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-146.093" vlookat="2.987" fovtype="MFOV" fov="100.000" maxpixelzoom="1.5" fovmin="70" fovmax="100" limitview="auto" />
+
+		<preview url="panos/MyzhskajaRazdevalka_final.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/MyzhskajaRazdevalka_final.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/MyzhskajaRazdevalka_final.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="21.980" atv="5.593" linkedscene="scene_reception_final" laX="0" laY="0" laF="100" tooltip_txt="ресепшн"/>
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-158.714" atv="5.217" linkedscene="scene_dysh_final1" laX="0" laY="0" laF="100" tooltip_txt="душ"/>
+		
+
+	</scene>
+	
+	<scene name="scene_GenskajaRazdevalka_final" title="Женская раздевалка" onstart="" thumburl="panos/MyzhskajaRazdevalka_final.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-120.980" vlookat="1.667" fovtype="MFOV" fov="100.000" maxpixelzoom="1.5" fovmin="70" fovmax="100" limitview="auto" />
+
+		<preview url="panos/MyzhskajaRazdevalka_final.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/MyzhskajaRazdevalka_final.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/MyzhskajaRazdevalka_final.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="21.980" atv="5.593" linkedscene="scene_reception_final" laX="0" laY="0" laF="100" tooltip_txt="рецепция"/>
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-159.294" atv="6.552" linkedscene="scene_dysh_final2" laX="0" laY="0" laF="100" tooltip_txt="душ"/>
+		
+		
+
+	</scene>
+
+	<scene name="scene_Dysh_final1" title="Мужской душ" onstart="" thumburl="panos/Dysh_final.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="1.5" fovmin="70" fovmax="100" limitview="auto" />
+
+		<preview url="panos/Dysh_final.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Dysh_final.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/Dysh_final.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-78.186" atv="7.703" linkedscene="scene_myzhskajasayna_final" laX="0" laY="0" laF="100" tooltip_txt="сауна"/>
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="113.222" atv="13.948" linkedscene="scene_myzhskajarazdevalka_final" laX="0" laY="0" laF="100" tooltip_txt="раздевалка"/>
+		
+
+	</scene>
+
+	<scene name="scene_Dysh_final2" title="Женский душ" onstart="" thumburl="panos/Dysh_final.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="322.366" vlookat="2.162" fovtype="MFOV" fov="100.000" maxpixelzoom="1.5" fovmin="70" fovmax="100" limitview="auto" />
+
+		<preview url="panos/Dysh_final.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Dysh_final.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/Dysh_final.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-78.468" atv="7.524" linkedscene="scene_genskajasayna_final" laX="0" laY="0" laF="100" tooltip_txt="сауна"/>
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="111.274" atv="6.525" linkedscene="scene_genskajarazdevalka_final" laX="0" laY="0" laF="100" tooltip_txt="раздевалка"/>
+		
+
+	</scene>
+	
+	<scene name="scene_MyzhskajaSayna_final" title="Мужская Сауна" onstart="" thumburl="panos/MyzhskajaSayna_final.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="1.5" fovmin="70" fovmax="100" limitview="auto" />
+
+		<preview url="panos/MyzhskajaSayna_final.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/MyzhskajaSayna_final.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/MyzhskajaSayna_final.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="67.209" atv="16.182" linkedscene="scene_dysh_final1" laX="0" laY="0" laF="100" tooltip_txt="душ"/>
+		
+
+	</scene>
+	
+	<scene name="scene_GenskajaSayna_final" title="Женская Сауна" onstart="" thumburl="panos/MyzhskajaSayna_final.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-25.384" vlookat="7.675" fovtype="MFOV" fov="100.000" maxpixelzoom="1.5" fovmin="70" fovmax="100" limitview="auto" />
+
+		<preview url="panos/MyzhskajaSayna_final.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/MyzhskajaSayna_final.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/MyzhskajaSayna_final.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="70.585" atv="18.491" linkedscene="scene_dysh_final2" laX="0" laY="0" laF="100" tooltip_txt="душ"/>
+		
+
+	</scene>
+	
+	<scene name="scene_Kort2_final1" title="Корт 1" onstart="" thumburl="panos/Kort2_final.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="1.5" fovmin="70" fovmax="100" limitview="auto" />
+
+		<preview url="panos/Kort2_final.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Kort2_final.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/Kort2_final.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="152.007" atv="0.060" linkedscene="scene_reception_final" laX="0" laY="0" laF="100" tooltip_txt="рецепция" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="27.257" atv="3.599" linkedscene="scene_kort1_sphere" laX="0" laY="0" laF="100" tooltip_txt="корт 1" />
+
+	</scene>
+	
+	<scene name="scene_Kort1_sphere" title="Корт 2" onstart="" thumburl="panos/Kort1_sphere.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="1.5" fovmin="70" fovmax="100" limitview="auto" />
+
+		<preview url="panos/Kort1_sphere.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Kort1_sphere.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/Kort1_sphere.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="11.662" atv="4.722" linkedscene="scene_kort2_final1" laX="0" laY="0" laF="100" tooltip_txt="корт 2" />
+
+	</scene>
+	
+
+</krpano>
